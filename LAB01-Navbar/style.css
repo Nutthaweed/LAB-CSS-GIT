@@ -32,12 +32,15 @@ a {
 .logo {
 	margin: 0;
 	font-size: 1.45em;
+	padding-left: 15%;
+	display: flex;
 }
 
 .main-nav {
 	margin-top: 5px;
 	padding: 10px;
-
+	padding-right: 15%;
+	display: flex;
 }
 .logo a,
 .main-nav a {
@@ -55,7 +58,7 @@ a {
 
 .main-nav a:hover {
 	color: #000000;
-	background-color: #ff4400;
+	background-color: #d6b4fc;
 }
 
 img {
@@ -79,7 +82,7 @@ button {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
-	background-color: #ff0000;
+	background-color: #9e4ef7;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
