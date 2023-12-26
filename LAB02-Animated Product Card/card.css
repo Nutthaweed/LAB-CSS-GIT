@@ -12,7 +12,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
+  background-image: linear-gradient(135deg, #FEAE96 10%, #FE0944 100%);
 }
 .product-card {
   position: relative;
@@ -107,16 +107,17 @@ body{
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.color-option  .circles .circle.blue.active{
-  box-shadow: 0 0 0 2px #fff,
-               0 0 0 4px ##87CEEB;
-}
-.color-option  .circles .circle.blue{
-  background: #FF0000;
-}
 .color-option  .circles .circle.red.active{
   box-shadow: 0 0 0 2px #fff,
-               0 0 0 4px ;
+               0 0 0 4px #F33A6A;
+}
+.color-option  .circles .circle.red{
+  background: #FF0000;
+}
+.color-option  .circles .circle.blue.active{
+  box-shadow: 0 0 0 2px #fff,
+                 0 0 0 4px #87CEEB;
+ ;
 }
 .color-option  .circles .circle.green{
   background: #00A36C;
@@ -137,11 +138,19 @@ body{
   color: #707070;
 }
 .color-price .price .price_letter{
-  font-size: 10px;
+  font-size: 25px;
   font-weight: 600;
   margin-top: -4px;
   color: #707070;
 }
+
+.color-price .price .price_description{
+   font-size: 10px;
+  font-weight: 600;
+  margin-top: -4px;
+  color: #707070;
+}
+
 .product-card .button{
   position: relative;
   height: 50px;
@@ -155,7 +164,7 @@ body{
   height: 100%;
   width: 300%;
   left: -100%;
-  background-image: linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF );
+  background-image: linear-gradient(135deg, #FF0000 , #FE0944, #FF7878, #FEAE96 );
   transition: all 0.4s ease;
   border-radius: 25PX;
 }
