@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio </title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="bx bx-menu menu-btn"></i>
+            <span class="namelogo">Nutthawit</span>
+        </div>
+        
+        
+        <div class="sidebar">
+            <div class="logo">
+                <i class="bx bx-menu menu-btn"></i>
+                <span class="namelogo">Nutthawit</span>
+            </div>
+
+
+               <div class="content">
+                <ul>
+                    <li>
+                        <a href="#about"><i class='bx bx-male'></i><span class="Link">About me</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class='bx bxs-terminal' ></i><span class="Link">Code</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class='bx bxs-contact' ></i><span class="Link">Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="Aboutme">
+            <div id="ring"></div>
+            <img src="image/profileimg.jpg">
+            <h1>Hello.I'm Nutthawit</h1>
+            <span>You can call me <strong>To</strong>. I'm 20 years old lazy programmer.</span>
+        </section>
+    </main>
+
+    <article id="about" class="firstarticle">
+    <section class="firstpage">
+        <h2>About me</h2>
+        <p><strong> My  Full name is Nutthawit Morkkaew</strong> <br> My hobby is playing video game and  coding some program.</p>
+        <div>
+            <canvas class="webgl"></canvas>
+        </div>
+    </section>
+</article>
+
+    <section class="overlay"></section>
+    <script src="sidebar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+    VANTA.GLOBE({
+  el: "#ring",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xfa0036
+    });
+});
+</script>
+<script type="module" src="model.js"></script>
+</body>
+</html>

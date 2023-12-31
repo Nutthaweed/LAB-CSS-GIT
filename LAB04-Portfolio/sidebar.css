@@ -1,0 +1,183 @@
+
+@font-face {
+    font-family: MineCraftFonts; 
+    src: url(MinecraftRegular-Bmg3.otf);
+}
+
+* {
+    font-family: MineCraftFonts;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    background: #F2F3F4;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #F2F3F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+}
+
+.logo .menu-btn {
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 14px;
+}
+
+.logo .namelogo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+nav .sidebar {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    padding: 20px 0;
+    background-color: #f2f3f4;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    left: -100%;
+}
+
+nav.display .sidebar {
+    left: 0;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 16px;
+    justify-content: space-between;
+}
+
+.content li {
+    list-style: none;
+}
+
+.content a{
+    display:    flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    text-decoration: none;
+    border-radius: 8px;   
+    color: #000;
+}
+
+.content a:hover {
+    background-color: #000;
+}
+
+.content i {
+    font-size: 20px;
+    color: #707070;
+    margin-right: 14px;
+}
+
+.content  a:hover i, .content a:hover .Link{
+    color: #fff;
+}
+
+.overlay {
+    height: 1000vh;
+    width: 200%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4 ease;
+    background: rgba(0,0,0,0.3);
+}
+
+
+nav.display ~ .overlay {
+    opcaity: 1;
+    left: 260px;
+    pointer-events: auto;
+}
+
+.Aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    height: calc(100vh - 70px);
+}
+
+.Aboutme h1 {
+    font-size: 2vw;
+}
+
+.Aboutme span {
+    font-size: 1vw;
+}
+
+.Aboutme img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    z-index: -1;
+    border-style: dotted;
+    border-color: white;
+}
+
+#ring {
+    display: block;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+.firstarticle {
+    background-color: #fff;
+}
+
+.firstpage {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    height: calc(100vh - 70px);
+    align-items: flex-start;
+    justify-content: start;
+    padding: 20%;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .Aboutme h1 {
+        font-size: 2rem;
+    }
+
+    .Aboutme span {
+        font-size: 1rem;
+    }
+}
