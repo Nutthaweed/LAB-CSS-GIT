@@ -6,6 +6,7 @@
     <title>My Portfolio </title>
     <link rel="stylesheet" href="sidebar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <nav>
@@ -28,10 +29,10 @@
                         <a href="#about"><i class='bx bx-male'></i><span class="Link">About me</span></a>
                     </li>
                     <li>
-                        <a href=""><i class='bx bxs-terminal' ></i><span class="Link">Code</span></a>
+                        <a href="#code"><i class='bx bxs-terminal' ></i><span class="Link">Code</span></a>
                     </li>
                     <li>
-                        <a href=""><i class='bx bxs-contact' ></i><span class="Link">Contact</span></a>
+                        <a href="#contact"><i class='bx bxs-contact' ></i><span class="Link">Contact</span></a>
                     </li>
                 </ul>
             </div>
@@ -41,21 +42,64 @@
     <main>
         <section class="Aboutme">
             <div id="ring"></div>
-            <img src="image/profileimg.jpg">
+            <image src="image/profileimg.jpg">
             <h1>Hello.I'm Nutthawit</h1>
             <span>You can call me <strong>To</strong>. I'm 20 years old lazy programmer.</span>
         </section>
+
+        <section class="firstpage" id="about">
+        <div class="section1" >
+           <div class="text" style="visibility: hidden;" ></div>
+        </div>
+           </div>
+        <div class="section2">
+            <div class="text">My favorite things, Are music,game and code <br>
+           I love to eat buffet,play ping pongs <br>
+            sometime I play ping-pong<br>
+            This is my graduation timeline
+        </div>
+        <div class="History">
+                <div>Pichayasuksa school       <strong>2008-2016</strong></div>
+               <div>Suankularb Witthayalai Nonthaburi School     <strong>2017-2022</strong></dov>
+                <div>Kasetsart University    <strong>2022-2022</strong></div>
+                <div>King Mongkut University of Technology North Bangkok      <strong>2023-now</strong></a></div>
+            </div>
+    </div>
+    <!-- fix the gap of website -->
+    </section>
+  
+    
+
+    
+    <section class="secondpage" id="code">
+        <div >
+          <div>Code That I used</div>
+        <div id="slider">
+        <ul id="slidewrap">
+            <li><img src="image/c.png" ></li>
+            <li><img src="image/javascript.png" "></li>
+            <li><img src="image/python.png"></li>
+            <li><img src="image/java.png"></li>
+            <li><img src="image/react.png"></li>
+        </ul>
+        <a id="prev" style="visibility: hidden;" >&#8810;</a>
+        <a id="next" style="visibility: hidden;">&#8811;</a>
+        </div>
+        </div>
+    
+    </section>
+
+    <section class="thirdpage" id="contact">
+        <div>Contact me 
+        <div></div>Line: totopichayasuksa
+        <div></div>Facebook: To Nutthaweed
+        <div></div> Instagram: @nutthaweed
+    </div>
+    </section>
+
     </main>
 
-    <article id="about" class="firstarticle">
-    <section class="firstpage">
-        <h2>About me</h2>
-        <p><strong> My  Full name is Nutthawit Morkkaew</strong> <br> My hobby is playing video game and  coding some program.</p>
-        <div>
-            <canvas class="webgl"></canvas>
-        </div>
-    </section>
-</article>
+
 
     <section class="overlay"></section>
     <script src="sidebar.js"></script>
@@ -76,6 +120,6 @@
     });
 });
 </script>
-<script type="module" src="model.js"></script>
+<script src="slider.js"></script>
 </body>
 </html>
